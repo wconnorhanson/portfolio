@@ -11,31 +11,68 @@
     <header class="header" id="header">
         <div class="container">
             <div class="row">
-                <h1 class="header" id="topHead">Home</h1>
-                <nav id="topNav">
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="col-6">
+                    <h1 class="header" id="topHead">Home</h1>
+                </div>
+                <div class="col-4 offset-2">
+                    <nav id="topNav">
+                        <ul class="nav-list navbar list-unstyled d-none d-md-flex">
+                            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                        <!-- Start -->
+                    <nav class="navbar d-md-none d-flex flex-row-reverse">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="projects.html">Projects</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                        <!-- end -->
+                </div>
             </div>
         </div>
     </header>
     <main class="main" id="main">
         <section class="section" id="section1">
             <div class="container">
-                <div class="row"> 
-                    <h2 class="header">Lorem ipsum dolor sit.</h2>
-                    <p class="section-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, magni totam soluta ratione beatae nemo itaque porro sapiente illum fugiat necessitatibus error ea autem! Perspiciatis.</p>
+                <div class="row">
+                    <div class="col-3">
+                        <img src="https://via.placeholder.com/100x100"alt="placeholder img" class="img-fluid image" />
+                    </div>
+                    <div class="col-9">
+                        <h2 class="header">Who am I?</h2>
+                        <p class="section-text">Hi, my name is William Hanson, and I am currently a junior web developer in training at the Mississippi Coding Academy.</p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="section" id="section2">
             <div class="container">
                 <div class="row">
-                    <h2 class="header">Ratione ab minima adipisci!</h2>
+                    <h2 class="header">My experience</h2>
                     <p class="section-text">Illum nam itaque maiores, ipsa unde perspiciatis vero! Repellat doloribus eveniet similique impedit laboriosam iure ipsam natus, quaerat debitis? Dignissimos, repellendus! Delectus reiciendis quod tempora.</p>
                 </div>
             </div>
