@@ -1,0 +1,48 @@
+:root {
+    --grad:
+    radial-gradient(
+        at bottom right,
+        #38eacc,
+        #020887
+    );
+}
+
+* {box-sizing: border-box;}
+
+/* tags */
+
+body {
+    background-color: #e9e9e9;
+}
+
+/* classes */
+
+
+
+/* ids */
+
+#splashBorder {
+    background-image: var(--grad);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#splashBreak {
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+#splashContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#splashNav {
+    list-style-type: none;
+}
