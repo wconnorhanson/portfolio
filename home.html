@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header py-2" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -60,11 +62,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <img src="https://via.placeholder.com/100x100"alt="placeholder img" class="img-fluid image" />
+                        <img src="images/Headshot1.jpeg"alt="A professional headshot of me" class="img-fluid image" />
                     </div>
                     <div class="col-9">
                         <h2 class="header">Who am I?</h2>
-                        <p class="section-text">Hi, my name is William Hanson, and I am currently a junior web developer in training at the Mississippi Coding Academy.</p>
+                        <p class="section-text">Hi, my name is William Hanson, and I am currently a junior web developer from Terry, Mississippi in training at the Mississippi Coding Academy. I currently have experience in coding with HTML and CSS, though I do aim to be learning Java Script, SQL, and Python in the near future. I focus on coding responsive and accessable websites.</p>
+                        <a href="about.html">&gt; Click here to learn more</a>
                     </div>
                 </div>
             </div>
@@ -72,24 +75,81 @@
         <section class="section" id="section2">
             <div class="container">
                 <div class="row">
-                    <h2 class="header">My experience</h2>
-                    <p class="section-text">Illum nam itaque maiores, ipsa unde perspiciatis vero! Repellat doloribus eveniet similique impedit laboriosam iure ipsam natus, quaerat debitis? Dignissimos, repellendus! Delectus reiciendis quod tempora.</p>
+                    <div class="col-9">
+                        <h2 class="header">My experience</h2>
+                        <p class="section-text">My experience and exposure to coding has been limited to my time in the Mississippi Coding Academy. I am skilled in using hypertext markup language (HTML), cascading style sheets (CSS), and the bootstrap respository for CSS. Below are some of the projects I've worked on.</p>
+                        <a href="projects.html" class="learn-more">&gt; Click here to see more</a>
+                    </div>
+                    <div class="col-3">
+                        <img src="https://via.placeholder.com/50x50"alt="placeholder img" class="img-fluid image" />
+                        
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section" id="section3">
-            <div class="container">
-                <div class="row">
-                    <h2 class="header">Consequuntur possimus quae dolorum?</h2>
-                    <p class="section-text">Necessitatibus quod sapiente consequatur asperiores porro quisquam, hic esse illo excepturi, saepe corrupti doloremque impedit voluptates provident ratione. Laboriosam unde ut vero quia, molestiae praesentium.</p>
+                <div class="row justify-content-evenly">
+                    <div class="col-md-3">
+                        <div class="card border-secondary my-2">
+                            <div class="card-header">
+                                Bloom Landing Page
+                            </div>
+                            <img src="https://via.placeholder.com/50x50"alt="A screenshot of the bloom landing page" class="img-fluid image" />
+                            <div class="card-body">
+                                A solo project where I used bootstrap to develop a responsive website based off of a given design
+                            </div>
+                            <div class="card-footer justify-content-evenly d-flex">
+                                <a href="https://github.com/wconnorhanson/bloom-bs" target="_blank" class="project-code">See the code</a>
+                                <a href="https://wconnorhanson.github.io/bloom-bs/" target="_blank" class="project-page">View the site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-secondary my-2">
+                            <div class="card-header">
+                                Bloom Landing Page
+                            </div>
+                            <img src="https://via.placeholder.com/50x50"alt="A screenshot of the bloom landing page" class="img-fluid image" />
+                            <div class="card-body">
+                                A group project where we used bootstrap to develop a responsive website based off of a given design
+                            </div>
+                            <div class="card-footer justify-content-evenly d-flex">
+                                <a href="https://github.com/wconnorhanson/Detroix-bs" target="_blank" class="project-code">See the code</a>
+                                <a href="https://wconnorhanson.github.io/Detroix-bs/" target="_blank" class="project-page">View the site</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer" id="footer">
         <div class="container">
-            <div class="row">
-                <p class="colophon">Made by <a href="https://github.com/wconnorhanson">William Hanson</a> &copy; &middot; 2024</p>
+            <div class="row flex-row-reverse">
+                <div class="col-md-3">
+                    <nav id="botNav">
+                        <ul class="nav-list navbar list-unstyled mx-4">
+                            <li class="nav-item social-item">
+                                <a href="https://www.linkedin.com/in/william-hanson-683817331/" class="nav-link social-link">
+                                    <i class="bi bi-linkedin"></i>
+                                    <span class="visually-hidden">Linked-in</span>
+                                </a>
+                            </li>
+                            <li class="nav-item social-item">
+                                <a href="#" class="nav-link social-link">
+                                    <i class="bi bi-twitter-x"></i>
+                                    <span class="visually-hidden">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="nav-item social-item">
+                                <a href="https://github.com/wconnorhanson" class="nav-link social-link">
+                                    <i class="bi bi-github"></i>
+                                    <span class="visually-hidden">Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9 text-center text-md-start">
+                    <p class="colophon">Made by William Hanson</a> &copy; &middot; 2024</p>
+                </div>
             </div>
         </div>
     </footer>
