@@ -9,6 +9,11 @@
         var(--g1),
         var(--g2)
     );
+    --name: "Crimson Text";
+}
+
+h1 {
+    font-family: var(--name);
 }
 
 * {box-sizing: border-box;}
