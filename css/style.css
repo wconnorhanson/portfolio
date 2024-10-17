@@ -1,6 +1,7 @@
 :root {
     --bg: #e9e9e9;
     --hl: #526760;
+    --hl2: #50514F;
     --g1: #38eacc;
     --g2: #020887;
     --grad:
@@ -9,11 +10,18 @@
         var(--g1),
         var(--g2)
     );
-    --name: "Crimson Text";
+    --f1: "Crimson Text";
+    --f2: "Noto Sans"
 }
 
+/* 
+#50514F
+
+*/
+
 h1 {
-    font-family: var(--name);
+    font-family: var(--f1);
+    color: var(--bg);
 }
 
 * {box-sizing: border-box;}
@@ -23,17 +31,88 @@ h1 {
 body {
     margin: 0;
     padding: 0;
-    background-color: #e9e9e9;
+    background-color: var(--bg);
+    font-family: var(--f2);
 }
 
 div {
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 /* classes */
 
+.active {
+    border-style: solid;
+    border-width: 3px;
+    border-image: var(--grad) 1;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.lb {
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(#38eacc, #020887) 1;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.rb {
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(#38eacc, #020887) 1;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
 .header, .main, .footer {
-    border: 1px solid red
+    /* border: 1px solid red */
+}
+
+.header {
+    background-color: var(--hl2);
+}
+
+.heading {
+    font-family: var(--f1);
+}
+
+.footer {
+    background-color: var(--hl2);
+    color: var(--bg);
+}
+
+.top-nav {
+    color: var(--bg);
+}
+
+.nav-btn {
+    border: 1px solid var(--bg);
+    /* color: var(--bg); */
+    /* background-color: var(--bg);
+    background-clip: text;
+    color: transparent; */
+}
+
+.btn-icon {
+    color: var(--bg);
+    font-size: 30px;
+}
+
+.social-link:hover {
+    border-style: solid;
+    border-width: 3px;
+    border-image: linear-gradient(#38eacc, #020887) 1;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.splash-link, .phone-link {
+    font-family: var(--f2);
 }
 
 /* ids */
@@ -71,15 +150,15 @@ div {
 
 
 .splash-link {
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: #54b3d6;
+    box-shadow: inset 0 0 0 0 var(--g2);
+    color: var(--g2);
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     border-bottom: 2px solid black;
 }
 .splash-link:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
+    box-shadow: inset 100px 0 0 0 var(--g2);
     color: white;
 }
 
@@ -99,4 +178,8 @@ div {
 
 #phoneName, .phone-link {
     margin: 0 auto;
+}
+
+#splashName, #phoneName {
+    color: black;
 }
