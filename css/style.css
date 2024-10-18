@@ -102,14 +102,14 @@ div {
     font-size: 30px;
 }
 
-.social-link:hover {
+/* .social-link:hover {
     border-style: solid;
     border-width: 3px;
     border-image: linear-gradient(#38eacc, #020887) 1;
     border-top: none;
     border-right: none;
     border-bottom: none;
-}
+} */
 
 .splash-link, .phone-link {
     font-family: var(--f2);
